@@ -23,4 +23,7 @@ public class UserService {
 		return obj.get();
 		//get retorna objeto user da classe optional.
 	}
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
 }
